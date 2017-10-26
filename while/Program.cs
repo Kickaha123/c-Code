@@ -21,6 +21,7 @@ namespace @while
             }
             Console.WriteLine("Out of Money");
             Console.ReadKey();
+            //
         }
     }
 }
