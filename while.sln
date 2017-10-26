@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while", "while\while.csproj", "{758E320E-5ECF-431A-B002-946854AC3C4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenMethoden", "..\..\..\..\..\Eigene Dateien\Documents\Visual Studio 2013\Projects\KlassenMethoden\KlassenMethoden\KlassenMethoden.csproj", "{0C44720F-0365-4842-88A6-AA6BAD88A815}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenMethoden", "KlassenMethoden\KlassenMethoden\KlassenMethoden.csproj", "{0C44720F-0365-4842-88A6-AA6BAD88A815}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
