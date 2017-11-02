@@ -48,12 +48,14 @@ namespace ConsoleApplication3
             //} while (xd == false);
             //Console.ReadKey();
 
-            Konto kt1 = new Konto(12);
-            Konto kt2 = new Konto(12);
+            Konto kt1 = new Konto(100);
+            Konto kt2 = new Konto(1000000);
             Konto kt3 = new Konto();
 
             Console.WriteLine(kt1.getKtoNr());
+            Console.WriteLine(kt1.getKtoStand());
             Console.WriteLine(kt2.getKtoNr());
+            Console.WriteLine("Cedric Money = " + kt2.getKtoStand());
             Console.WriteLine(kt3.getKtoNr());
             Console.ReadKey();
 
@@ -67,15 +69,17 @@ namespace ConsoleApplication3
             private uint ktoNr;
             private static uint ktoNrplus = 400000;
 
-            private double ktoStand = 300;
+            private double ktoStand;
 
             public Konto()
             {
                 ktoNr = ktoNrplus++;
+                ktoStand = 0;
             }
             public Konto(double ulul)
+                : this()
             {
-                ktoNr = ktoNrplus++;
+                ktoStand = ulul;
             }
             public uint getKtoNr()
             {
