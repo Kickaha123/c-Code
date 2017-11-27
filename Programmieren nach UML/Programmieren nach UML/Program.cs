@@ -18,13 +18,14 @@ namespace Programmieren_nach_UML
 
             f1.addWerk(w1);
             f1.addWerk(w2);
-
-            Console.WriteLine(f1.berechneGesamtumsatz());
+            Console.WriteLine("Anahl Werke in Firma: " + f1.blub());
+            Console.WriteLine("Gesamter Umsatz: " + f1.berechneGesamtumsatz());
             Console.ReadKey();
 
         }
         class Firma
         {
+            private int AnzahlWerke;
             List<Werk> Werke = new List<Werk>();
 
             public void addWerk(Werk w)
@@ -39,6 +40,14 @@ namespace Programmieren_nach_UML
                     umsatz += w.berechneUmsatz();
 
                 return umsatz;
+            }
+            public int blub()
+            {
+                foreach (Werk w in Werke)
+                {
+                    AnzahlWerke++;
+                }
+                return AnzahlWerke;
             }
         }
         class Werk
